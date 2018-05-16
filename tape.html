@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+@import url('https://fonts.googleapis.com/css?family=Amatic+SC');
+
+.btn {
+  -webkit-border-radius: 28;
+  -moz-border-radius: 28;
+  border-radius: 28px;
+  font-family: Arial;
+  color: #c45e5e;
+  font-size: 17px;
+  background: #ffffff;
+  padding: 10px 20px 10px 20px;
+  border: solid #c96969 2px;
+  text-decoration: none;
+}
+
+.btn:hover {
+  background: #edb6b6;
+  text-decoration: none;
+}
+
+
+</style>
+
+</head>
+<body>
+
+<h2 style="font-family: 'Amatic SC', cursive; font-size: 100px; font-weight: 1; text-align: center; position: relative; top: -50px;">Happy anniversary baby</h2>
+<img src="casette.gif" alt="tape" style="position: relative; top: -250px; right: -220px;">
+
+<audio id="myAudio">
+  <source src="heythere.mp3" type="audio/mpeg">
+  Your browser does not support the audio element.
+</audio>
+<div style="text-align: center; position: relative; bottom: 360px;">
+<button class="btn" onclick="playAudio()" type="button">play 'with' me</button>
+<button class="btn" onclick="pauseAudio()" type="button">too much ho gaya</button> 
+</div>
+<script>
+var x = document.getElementById("myAudio"); 
+
+function playAudio() { 
+    x.play(); 
+} 
+
+function pauseAudio() { 
+    x.pause(); 
+} 
+</script>
+
+</body>
+</html>
